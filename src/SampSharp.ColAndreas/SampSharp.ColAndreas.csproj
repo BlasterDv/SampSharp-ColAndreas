@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+      <TargetFramework>netstandard2.1</TargetFramework>
+	  <PackageIcon>sampsharp.png</PackageIcon>
+      <PackageId>SampSharp.ColAndreas</PackageId>
+	  <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+	  <PackageProjectUrl>https://github.com/BlasterDv/SampSharp-ColAndreas</PackageProjectUrl>
+	  <Title>SampSharp ColAndreas</Title>
+	  <Description>Wrapper of the ColAndreas plugin for SampSharp.</Description>
+      <Version>0.1.0</Version>
+      <AssemblyVersion>0.1.0</AssemblyVersion>
+      <FileVersion>0.1.0</FileVersion>
+      <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+      <Authors>SampSharp.ColAndreas</Authors>
+      <Product>SampSharp.ColAndreas</Product>
+      <AssemblyName>SampSharp.ColAndreas</AssemblyName>
+      <RootNamespace>SampSharp.ColAndreas</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SampSharp.GameMode" Version="0.9.1" />
+  </ItemGroup>
+	
+	<ItemGroup>
+    <None Include="..\..\sampsharp.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+</Project>
