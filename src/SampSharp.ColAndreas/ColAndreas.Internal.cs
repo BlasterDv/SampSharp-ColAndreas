@@ -52,6 +52,24 @@ namespace SampSharp.ColAndreas
             {
                 throw new NotImplementedException();
             }
+
+            [NativeMethod]
+            public virtual int CA_RayCastReflectionVector(float startX, float startY, float startZ, float endX, float endY, float endZ, out float x, out float y, out float z, out float nx, out float ny, out float nz)
+            {
+                throw new NotImplementedException();
+            }
+
+            [NativeMethod]
+            public virtual int CA_RayCastLineNormal(float startX, float startY, float startZ, float endX, float endY, float endZ, out float x, out float y, out float z, out float nx, out float ny, out float nz)
+            {
+                throw new NotImplementedException();
+            }
+
+            [NativeMethod]
+            public virtual int CA_ContactTest(int modelid, float x, float y, float z, float rx, float ry, float rz)
+            {
+                throw new NotImplementedException();
+            }
         }
     }
 }
