@@ -20,7 +20,7 @@ namespace SampSharp.ColAndreas
 {
     public partial class ColAndreas
     {
-        protected static ColAndreasInternal Internal;
+        public static ColAndreasInternal Internal { get; }
 
         static ColAndreas()
         {
@@ -67,6 +67,48 @@ namespace SampSharp.ColAndreas
 
             [NativeMethod]
             public virtual int CA_ContactTest(int modelid, float x, float y, float z, float rx, float ry, float rz)
+            {
+                throw new NotImplementedException();
+            }
+
+            [NativeMethod]
+            public virtual int CA_SetObjectExtraID(int index, int type, int data)
+            {
+                throw new NotImplementedException();
+            }
+
+            [NativeMethod]
+            public virtual int CA_GetObjectExtraID(int index, int type)
+            {
+                throw new NotImplementedException();
+            }
+
+            [NativeMethod]
+            public virtual int CA_CreateObject(int modelid, float x, float y, float z, float rx, float ry, float rz, bool add)
+            {
+                throw new NotImplementedException();
+            }
+
+            [NativeMethod]
+            public virtual int CA_DestroyObject(int index)
+            {
+                throw new NotImplementedException();
+            }
+
+            [NativeMethod]
+            public virtual int CA_IsValidObject(int index)
+            {
+                throw new NotImplementedException();
+            }
+
+            [NativeMethod]
+            public virtual int CA_SetObjectPos(int index, float x, float y, float z)
+            {
+                throw new NotImplementedException();
+            }
+
+            [NativeMethod]
+            public virtual void CA_SetObjectRot(int index, float rx, float ry, float rz)
             {
                 throw new NotImplementedException();
             }

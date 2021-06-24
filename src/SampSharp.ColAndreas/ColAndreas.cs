@@ -16,6 +16,7 @@
 using System;
 using SampSharp.ColAndreas.Data;
 using SampSharp.ColAndreas.Definitions;
+using SampSharp.ColAndreas.Entities;
 using SampSharp.GameMode;
 
 namespace SampSharp.ColAndreas
@@ -32,6 +33,15 @@ namespace SampSharp.ColAndreas
             if (result == 0) return RayCastLine.NoCollision;
             else if (result == ColAndreasConstants.WaterObject) return new RayCastLine(new Vector3(x, y, z));
             else return new RayCastLine(new Vector3(x, y, z), result);
+        }
+
+        public RayCastLineId CA_RayCastLineId(Vector3 start, Vector3 end)
+        {
+            var result = Internal.CA_RayCastLineID(start.X, start.Y, start.Z, end.X, end.Y, end.Z, out var x, out var y, out var z);
+
+            if (result == -1) return new RayCastLineId(new Vector3(x, y, z));
+            else if (result == 0) return RayCastLineId.NoCollision;
+            else return new RayCastLineId(ColAndreasObject.Find(result), new Vector3(x, y, z));
 
         }
     }
